@@ -125,16 +125,38 @@
     color: var(--foreground);
     line-height: 1.5;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-sora);
   }
 }
 
 @layer utilities {
   .light-cards {
-    transition: 
-    translate .8s,
-    opacity .8s,
-    border 3s;
+    transition:
+      translate 0.8s,
+      opacity 0.8s,
+      border 3s;
+  }
+  .msg-form {
+    animation: upMsg 2s ease-in-out;
+  }
+  @keyframes upMsg {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100px);
+    }
+  }
+  .technos {
+    @apply relative flex aspect-square w-[70px] items-center justify-center rounded-[10px] border border-[#6D6969]/70 bg-gradient-to-b from-[#222] to-[#333] hover:cursor-pointer sm:w-[95px] xl:w-[115px];
+  }
+  .technos-light {
+    @apply absolute -z-1 h-[60px] w-[60px] blur-[50px] transition-all duration-300;
   }
 }

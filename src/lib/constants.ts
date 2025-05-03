@@ -41,7 +41,8 @@ export const SKILLS = [
   {
     name: "skills",
     title: "Next.js",
-    description: "Next.js est un framework React qui nous permet d'optimiser au maximum le SEO, idéal pour mettre vos sites en avant.",
+    description:
+      "Next.js est un framework React qui nous permet d'optimiser au maximum le SEO, idéal pour mettre vos sites en avant.",
     href: "nextjs.org",
     img: "/nextjs.png",
     alt: "Nextjs logo",
@@ -49,7 +50,8 @@ export const SKILLS = [
   {
     name: "skills",
     title: "Node.js",
-    description: "Node.js nous permettra de créer des serveurs et des applications web. Afin de sécurisé votre site web au maximum.",
+    description:
+      "Node.js nous permettra de créer des serveurs et des applications web. Afin de sécurisé votre site web au maximum.",
     href: "nodejs.org",
     img: "/nodejs.png",
     alt: "Nodejs logo",
@@ -57,7 +59,8 @@ export const SKILLS = [
   {
     name: "skills",
     title: "React",
-    description: "React framework JavaScript éprouvé afin de construire des interfaces utilisateur dynamiques et interactives.",
+    description:
+      "React framework JavaScript éprouvé afin de construire des interfaces utilisateur dynamiques et interactives.",
     href: "reactjs.org",
     img: "/react.png",
     alt: "React logo",
@@ -65,9 +68,45 @@ export const SKILLS = [
   {
     name: "skills",
     title: "Typescript",
-    description: "Typsecript nous permettra de rendre notre code plus robuste et plus facilement maintenable.",
+    description:
+      "Typsecript nous permettra de rendre notre code plus robuste et plus facilement maintenable.",
     href: "typescriptlang.org",
     img: "/typescript.png",
     alt: "Typescript logo",
+  },
+];
+
+export const technos = [
+  {
+    img: "/nodejs.png",
+    alt: "Nodejs logo",
+    width: 58,
+    height: 66,
+    classNameImg: "w-9 xl:w-12",
+    bgLight: "bg-[#2FB528]"
+  },
+  {
+    img: "/html.png",
+    alt: "HTML logo",
+    width: 103,
+    height: 56,
+    classNameImg: "w-15 xl:w-20",
+    bgLight: "bg-[#AE5027]"
+  },
+  {
+    img: "/css3.png",
+    alt: "CSS logo",
+    width: 81,
+    height: 81,
+    classNameImg: "w-12 xl:w-15",
+    bgLight: "bg-[#1E37B7]"
+  },
+  {
+    img: "/js.png",
+    alt: "Javascript logo",
+    width: 50,
+    height: 50,
+    classNameImg: "rounded w-9 xl:w-11",
+    bgLight: "bg-[#CEAA18]"
   },
 ];

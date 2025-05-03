@@ -1,91 +1,142 @@
+import { technos } from "@/lib/constants";
 import Image from "next/image";
 
 export default function Technos() {
-  return <section className="pt-25 lg:pt-40">
-    <div>
-      <h2 className="text-[50px] font-bold bg-gradient-to-b from-[#177CFF] to-[#2BA1EA]/50 text-transparent bg-clip-text">Techs utilisées.</h2>
-      <p>Les meilleures technologies afin de livrer un produit adéquat.</p>
-    </div>
+  return (
+    <section className="pt-25 lg:pt-40">
+      <div>
+        <h2 className="bg-gradient-to-b from-[#177CFF] to-[#2BA1EA]/50 bg-clip-text text-4xl font-bold text-transparent sm:text-[50px]">
+          Techs utilisées.
+        </h2>
+        <p className="text-sm sm:text-[16px]">
+          Les meilleures technologies afin de livrer un produit adéquat.
+        </p>
+      </div>
 
-    <ul className="mt-20 grid gap-5 md:grid-cols-2 lg:mt-30">
-      <li className="relative overflow-hidden bg-gradient-to-bl from-[#171717]/50 to-[#C0C0C0]/50 h-[250px] rounded-xl group">
-        <div className="absolute z-1 bottom-10 left-12">
-          <Image src={"/nextjs.png"} alt="" width={100} height={100} className="mb-5"/>
-          <h3 className="text-[25px] font-bold">Next.js</h3>
-        </div>
+      <ul className="mt-10 grid gap-5 sm:mt-20 md:grid-cols-2 lg:mt-30">
+        <li className="group relative h-[250px] overflow-hidden rounded-xl bg-gradient-to-bl from-[#171717]/50 to-[#C0C0C0]/50">
+          <div className="absolute bottom-10 left-12 z-1">
+            <Image
+              src={"/nextjs.png"}
+              alt=""
+              width={100}
+              height={100}
+              className="mb-5"
+            />
+            <h3 className="text-[25px] font-bold">Next.js</h3>
+          </div>
 
-        <div className="absolute -top-12 -right-12">
-          <Image src={"/nextjs.png"} alt="" width={300} height={200} className="mb-5 opacity-50"/>
-        </div>
-      </li>
+          <div className="absolute -top-12 -right-12">
+            <Image
+              src={"/nextjs.png"}
+              alt=""
+              width={300}
+              height={200}
+              className="mb-5 opacity-50"
+            />
+          </div>
+        </li>
 
-      <li className="relative z-1 overflow-hidden bg-gradient-to-b from-[#20CFFF] to-[#3F7CEE] rounded-xl h-[250px] lg:">
-        <div className="text-white mt-20 ml-5">
-          <h3 className="font-bold mb-2 text-3xl">React</h3>
-          <p>React framework JavaScript éprouvé afin de construire des interfaces utilisateur dynamiques et intéractives.</p>
-        </div>
+        <li className="lg: relative z-1 h-[250px] overflow-hidden rounded-xl bg-gradient-to-b from-[#20CFFF] to-[#3F7CEE]">
+          <div className="mt-20 ml-5 text-white">
+            <h3 className="mb-2 text-3xl font-bold">React</h3>
+            <p>
+              React framework JavaScript éprouvé afin de construire des
+              interfaces utilisateur dynamiques et intéractives.
+            </p>
+          </div>
 
-        <div>
-          <Image src={"/react.png"} alt="" width={300} height={300} className="absolute -z-1 -top-10 -right-15 opacity-40"/>
-        </div>
-      </li>
+          <div>
+            <Image
+              src={"/react.png"}
+              alt=""
+              width={300}
+              height={300}
+              className="absolute -top-10 -right-15 -z-1 opacity-40"
+            />
+          </div>
+        </li>
 
-      <li className="relative z-1 overflow-hidden bg-gradient-to-b from-[#01679A]/50 to-[#20CFFF]/70 rounded-xl h-[250px]">
-        <div className="flex flex-col gap-y-5 text-white mt-8 ml-5">
-          <Image src={"/tailwindLogo.png"} alt="" width={50} height={50}/>
-          <h3 className="font-bold mb-2 text-3xl">Tailwind CSS</h3>
-          <p className="w-70">Frameworwk CSS incontournable simple d&apos;utilisation.</p>
-        </div>
+        <li className="relative z-1 h-[250px] overflow-hidden rounded-xl bg-gradient-to-b from-[#01679A]/50 to-[#20CFFF]/70">
+          <div className="mt-8 ml-5 flex flex-col gap-y-5 text-white">
+            <Image src={"/tailwindLogo.png"} alt="" width={50} height={50} />
+            <h3 className="mb-2 text-3xl font-bold">Tailwind CSS</h3>
+            <p className="w-70">
+              Frameworwk CSS incontournable simple d&apos;utilisation.
+            </p>
+          </div>
 
-        <div>
-          <Image src={"/tailwindLogo.png"} alt="" width={500} height={500} className="absolute -z-1 -top-8 -right-45 opacity-40"/>
-        </div>
-      </li>
+          <div>
+            <Image
+              src={"/tailwindLogo.png"}
+              alt=""
+              width={500}
+              height={500}
+              className="absolute -top-8 -right-45 -z-1 opacity-40"
+            />
+          </div>
+        </li>
 
-      <li className="relative overflow-hidden bg-gradient-to-bl from-[#0D52FF]/70 to-[#144C74]/70 h-[250px] rounded-xl group">
-        <div className="flex flex-col items-center absolute z-1 bottom-0 -left-15">
-          <h3 className="text-[18px] font-semibold text-white mr-2">Typescript</h3>
-          <Image src={"/typescript.png"} alt="" width={300} height={300}/>
-        </div>
+        <li className="group relative h-[250px] overflow-hidden rounded-xl bg-gradient-to-bl from-[#0D52FF]/70 to-[#144C74]/70">
+          <div className="absolute bottom-0 -left-15 z-1 flex flex-col items-center">
+            <h3 className="mr-2 text-[18px] font-semibold text-white">
+              Typescript
+            </h3>
+            <Image src={"/typescript.png"} alt="" width={300} height={300} />
+          </div>
 
-        <div className="absolute -top-3 -right-35">
-          <Image src={"/typescript.png"} alt="" width={500} height={500} className="block mb-5 opacity-30"/>
-        </div>
-      </li>
-    </ul>
+          <div className="absolute -top-3 -right-35">
+            <Image
+              src={"/typescript.png"}
+              alt=""
+              width={500}
+              height={500}
+              className="mb-5 block opacity-30"
+            />
+          </div>
+        </li>
+      </ul>
 
-    <div className="relative z-1 bg-[#222] my-20 py-10 px-20 rounded-xl lg:py-20 lg:px-25 xl:px-35 xl:my-30">
-        <ul className="grid gap-y-10 place-items-center justify-between grid-cols-[repeat(2,_95px)] md:grid-cols-[repeat(4,_125px)]">
-          <li className="relative group bg-gradient-to-b from-[#222] to-[#333] border border-[#6D6969]/70 flex justify-center items-center rounded-[10px] w-[95px] aspect-square xl:w-[115px] hover:cursor-pointer">
-            <Image src={"/nodejs.png"} alt="" width={58} height={66} className="w-9 xl:w-12"/>
-            <div className="absolute -z-1 w-[60px] h-[60px] blur-[50px] bg-[#2FB528] transition-all duration-300 group-hover:w-[70px] group-hover:h-[70px]"/>
-          </li>
-
-          <li className="relative group bg-gradient-to-b from-[#222] to-[#333] border border-[#6D6969]/70 flex justify-center items-center rounded-[10px] w-[95px] aspect-square xl:w-[115px] hover:cursor-pointer">
-            <Image src={"/html.png"} alt="" width={103} height={56} className="w-15 xl:w-20"/>
-            <div className="absolute -z-1 w-[60px] h-[60px] blur-[50px] bg-[#AE5027] transition-all duration-300 group-hover:w-[70px] group-hover:h-[70px]"/>
-          </li>
-
-          <li className="relative group bg-gradient-to-b from-[#222] to-[#333] border border-[#6D6969]/70 flex justify-center items-center rounded-[10px] w-[95px] aspect-square xl:w-[115px] hover:cursor-pointer">
-            <Image src={"/css3.png"} alt="" width={81} height={81} className="w-12 xl:w-15"/>
-            <div className="absolute -z-1 w-[60px] h-[60px] blur-[50px] bg-[#1E37B7] transition-all duration-300 group-hover:w-[70px] group-hover:h-[70px]"/>
-          </li>
-
-          <li className="relative group bg-gradient-to-b from-[#222] to-[#333] border border-[#6D6969]/70 flex justify-center items-center rounded-[10px] w-[95px] aspect-square xl:w-[115px] hover:cursor-pointer">
-            <Image src={"/js.png"} alt="" width={50} height={50} className="rounded w-9 xl:w-11"/>
-            <div className="absolute -z-1 w-[60px] h-[60px] blur-[50px] bg-[#CEAA18] transition-all duration-300 group-hover:w-[70px] group-hover:h-[70px]"/>
-          </li>
+      <div className="relative z-1 my-20 rounded-xl bg-[#222] px-10 py-8 sm:px-20 sm:py-10 lg:px-25 lg:py-20 xl:my-30 xl:px-35">
+        <ul className="grid grid-cols-[repeat(2,_75px)] place-items-center justify-between gap-y-10 sm:grid-cols-[repeat(2,_95px)] md:grid-cols-[repeat(4,_125px)]">
+          {technos.map((t, index) => (
+            <li className="technos group" key={index}>
+              <Image
+                src={t.img}
+                alt={t.alt}
+                width={t.width}
+                height={t.height}
+                className={t.classNameImg}
+              />
+              <div
+                className={`technos-light group-hover:h-[70px] group-hover:w-[70px] ${t.bgLight}`}
+              />
+            </li>
+          ))}
         </ul>
 
-        <div className="flex flex-col gap-y-5 mt-15 mx-auto md:flex-row md:justify-between md:gap-x-5 xl:gap-x-15 xl:mt-20">
-          <div className="bg-gradient-to-b from-[#fff] to-[#A6A6A6] rounded-lg border-[3px] border-[#1F662E] text-center h-12 md:flex-1">
-            <Image src={"/mongoDB.png"} alt="" width={120} height={50} className="inline-flex"/>
+        <div className="mx-auto mt-10 flex flex-col gap-y-5 sm:mt-15 md:flex-row md:justify-between md:gap-x-5 xl:mt-20 xl:gap-x-15">
+          <div className="h-12 rounded-lg border-[3px] border-[#1F662E] bg-gradient-to-b from-[#fff] to-[#A6A6A6] text-center md:flex-1">
+            <Image
+              src={"/mongoDB.png"}
+              alt=""
+              width={120}
+              height={50}
+              className="inline-flex"
+            />
           </div>
 
-          <div className="bg-white rounded-lg border-[3px] border-[#2968DB] text-center h-12 mt-5 md:flex-1 md:mt-0">
-            <Image src={"/postgreSQL.png"} alt="" width={150} height={100} className="inline-flex h-full object-cover"/>
+          <div className="mt-5 h-12 rounded-lg border-[3px] border-[#2968DB] bg-white text-center md:mt-0 md:flex-1">
+            <Image
+              src={"/postgreSQL.png"}
+              alt=""
+              width={150}
+              height={100}
+              className="inline-flex h-full object-cover"
+            />
           </div>
         </div>
-    </div>
-  </section>
+      </div>
+    </section>
+  );
 }

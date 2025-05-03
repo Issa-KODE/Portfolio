@@ -33,10 +33,10 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="pt-30 pb-10 lg:pt-20">
+    <section className="pt-30 sm:pb-10 lg:pt-20">
       <div className="flex flex-col md:mt-10 lg:flex-row lg:items-center lg:justify-between lg:h-[300px] lg:mt-25 lg:mb-50 lg:gap-x-5 xl:h-[350px] 2xl:gap-x-0">
         <div className="lg:w-1/2">
-          <h2 className="bg-gradient-to-b from-gray-900 to-gray-600 text-transparent bg-clip-text text-4xl md:text-5xl xl:text-6xl">
+          <h2 className="text-2xl bg-gradient-to-b from-gray-900 to-gray-600 text-transparent bg-clip-text sm:text-4xl md:text-5xl xl:text-6xl">
             Hello, <span className="text-blue-400">Issa Petit</span>{" "}
             Développeur web à votre service.
           </h2>
@@ -45,10 +45,10 @@ export default function Hero() {
             className="cursor-pointer my-5 w-full md:p-5 md:my-10 lg:my-5 lg:w-auto"
             asChild
           >
-            <Link href="#contact">Contactez moi</Link>
+            <Link href="mailto:issa.petit@outlook.fr">Contactez moi</Link>
           </Button>
 
-          <p className="mt-3 text-xl text-gray-700">
+          <p className="mt-3 sm:text-xl text-gray-700">
             Un développeur web passionné avec un don pour la création
             d&apos;expériences d&apos;utilisateurs.
           </p>
@@ -58,8 +58,14 @@ export default function Hero() {
           <Image
             src={"/wireframe.avif"}
             alt=""
-            width={700}
-            height={700}
+            width={500}
+            height={500}
+            sizes="
+              (max-width: 540px) 540px,
+              (max-width: 768px) 768px,
+              (max-width: 1200px) 1200px,
+              540px
+            "
             className="w-full rounded-xl object-cover lg:h-full lg:w-auto"
           />
         </div>
@@ -67,13 +73,13 @@ export default function Hero() {
 
       <div
         ref={targetRef}
-        className="relative rounded-[20px] bg-[#111] text-[#f1f1f1] border border-transparent mt-15 px-8 pt-10 pb-15 lg:p-13 2xl:mt-15 2xl:px-[75px] 2xl:pt-15 2xl:pb-22"
+        className="relative p-5 rounded-[20px] bg-[#111] text-[#f1f1f1] border border-transparent mt-15 sm:px-8 sm:pt-10 sm:pb-15 lg:p-13 2xl:mt-15 2xl:px-[75px] 2xl:pt-15 2xl:pb-22"
       >
         <div className="lg:max-w-xl">
-          <h3 className={`opacity-0 text-3xl transition-opacity duration-800 lg:text-2xl xl:text-4xl ${isVisible && "opacity-100"}`}>
+          <h3 className={`opacity-0 text-2xl transition-opacity duration-800 sm:text-3xl lg:text-2xl xl:text-4xl ${isVisible && "opacity-100"}`}>
             Obtenez un travail rapide et efficace.
           </h3>
-          <p className={`opacity-0 text-sm mt-5 mb-15 text-[#A1A1A1] transition-opacity duration-1000 lg:mt-4 lg:mb-11 xl:text-lg ${isVisible && "opacity-100"}`}>
+          <p className={`opacity-0 text-sm mt-3 mb-10 sm:mt-5 sm:mb-15 text-[#A1A1A1] transition-opacity duration-1000 lg:mt-4 lg:mb-11 xl:text-lg ${isVisible && "opacity-100"}`}>
             We believe technology is the answer to the world’s greatest
             challenges. It’s also the cause, so we find ourselves in bit of a
             catch 22 situation.
@@ -81,7 +87,7 @@ export default function Hero() {
         </div>
 
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center overflow-hidden">
-          <div className="flex flex-col gap-y-15 md:flex-row md:gap-x-5 lg:gap-x-0 lg:flex-col lg:gap-y-10">
+          <div className="flex flex-col gap-y-10 sm:gap-y-15 md:flex-row md:gap-x-5 lg:gap-x-0 lg:flex-col lg:gap-y-10">
             {/* Cards */}
             <div
               className={`w-full -translate-x-[50%] opacity-0 border border-[#222] bg-[#222] rounded-[20px] light-cards py-3 px-5 md:translate-x-0 md:translate-y-[100%] lg:-translate-x-[50%] lg:translate-y-0 lg:w-[300px] xl:w-[350px] 2xl:w-[370px] 2xl:h-[185px] 2xl:py-5.5 2xl:px-9 ${
