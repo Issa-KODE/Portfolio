@@ -18,7 +18,7 @@ export default function Projects() {
         }
       },
       {
-        threshold: 0.5,
+        threshold: 0.1,
       },
     );
 
@@ -41,7 +41,7 @@ export default function Projects() {
 
       <ul
         ref={targetRef}
-        className={`mt-10 mb-15 grid grid-cols-1 gap-y-15 transition-all duration-1000 sm:mt-18 sm:mb-30 md:grid-cols-2 md:gap-x-5 xl:grid-cols-3 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-[50%] opacity-0"}`}
+        className={`mt-10 mb-15 grid grid-cols-1 gap-y-15 transition-all duration-1000 sm:mt-18 sm:mb-30 md:grid-cols-2 md:gap-x-5 xl:grid-cols-3 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-[10%] opacity-0"}`}
       >
         {PROJECTS.slice(1, 4).map((project, index) => (
           <Link href="/" key={index}>
