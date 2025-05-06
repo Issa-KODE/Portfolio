@@ -3,20 +3,13 @@ import Form from "./Form";
 export default function Contact() {
   return (
     <section className="pt-50">
-      <h2 className="mb-10 text-4xl font-semibold lg:text-6xl">
-        Contactez-moi
-      </h2>
-
-      <div className="rounded-xl bg-[#111] px-6 pt-8 pb-12 xl:px-10 xl:pt-12 xl:pb-15">
-        <h3 className="text-2xl text-white xl:text-3xl">
+        <h3 className="font-bold text-2xl lg:text-3xl xl:text-4xl">
           Besoin d&apos;un projet ?
         </h3>
-        <div className="flex flex-col lg:flex-row lg:gap-x-5">
+        <div className="flex flex-col lg:flex-row lg:gap-x-20 mt-5">
           <Form />
 
-          <div className="my-10 border border-gray-300/20" />
-
-          <div className="mt-7 rounded-lg bg-white/95 p-5">
+          <div className="mt-15 rounded-lg p-5 border border-gray-300 lg:mt-7">
             <h4 className="text-[20px] font-semibold md:text-2xl">
               Suivez-moi
             </h4>
@@ -67,7 +60,6 @@ export default function Contact() {
             </ul>
           </div>
         </div>
-      </div>
     </section>
   );
 }

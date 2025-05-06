@@ -1,11 +1,10 @@
-import { technos } from "@/lib/constants";
 import Image from "next/image";
 
 export default function Technos() {
   return (
     <section className="pt-25 lg:pt-40">
       <div>
-        <h2 className="bg-gradient-to-b from-[#177CFF] to-[#2BA1EA]/50 bg-clip-text text-4xl font-bold text-transparent sm:text-[50px]">
+        <h2 className="text-[#177CFF] bg-clip-text text-4xl font-bold sm:text-[50px]">
           Techs utilisées.
         </h2>
         <p className="text-sm sm:text-[16px]">
@@ -96,47 +95,6 @@ export default function Technos() {
           </div>
         </li>
       </ul>
-
-      <div className="relative z-1 my-20 rounded-xl bg-[#222] px-10 py-8 sm:px-20 sm:py-10 lg:px-25 lg:py-20 xl:my-30 xl:px-35">
-        <ul className="grid grid-cols-[repeat(2,_75px)] place-items-center justify-between gap-y-10 sm:grid-cols-[repeat(2,_95px)] md:grid-cols-[repeat(4,_125px)]">
-          {technos.map((t, index) => (
-            <li className="technos group" key={index}>
-              <Image
-                src={t.img}
-                alt={t.alt}
-                width={t.width}
-                height={t.height}
-                className={t.classNameImg}
-              />
-              <div
-                className={`technos-light group-hover:h-[70px] group-hover:w-[70px] ${t.bgLight}`}
-              />
-            </li>
-          ))}
-        </ul>
-
-        <div className="mx-auto mt-10 flex flex-col gap-y-5 sm:mt-15 md:flex-row md:justify-between md:gap-x-5 xl:mt-20 xl:gap-x-15">
-          <div className="h-12 rounded-lg border-[3px] border-[#1F662E] bg-gradient-to-b from-[#fff] to-[#A6A6A6] text-center md:flex-1">
-            <Image
-              src={"/mongoDB.png"}
-              alt=""
-              width={120}
-              height={50}
-              className="inline-flex"
-            />
-          </div>
-
-          <div className="mt-5 h-12 rounded-lg border-[3px] border-[#2968DB] bg-white text-center md:mt-0 md:flex-1">
-            <Image
-              src={"/postgreSQL.png"}
-              alt=""
-              width={150}
-              height={100}
-              className="inline-flex h-full object-cover"
-            />
-          </div>
-        </div>
-      </div>
     </section>
   );
 }

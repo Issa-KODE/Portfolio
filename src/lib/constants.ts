@@ -76,37 +76,25 @@ export const SKILLS = [
   },
 ];
 
-export const technos = [
+export const FAQ = [
   {
-    img: "/nodejs.png",
-    alt: "Nodejs logo",
-    width: 58,
-    height: 66,
-    classNameImg: "w-9 xl:w-12",
-    bgLight: "bg-[#2FB528]"
+    title: "Avez-vous déjà collaborer sur des projets ?",
+    description:
+      "Oui, j'ai pu effectivement travaillé sur des projets en equipe notamment lors de mon apprentissage en utilisant Github et Trello.",
   },
   {
-    img: "/html.png",
-    alt: "HTML logo",
-    width: 103,
-    height: 56,
-    classNameImg: "w-15 xl:w-20",
-    bgLight: "bg-[#AE5027]"
+    title: "Avez-vous des projets en cours ?",
+    description:
+      "Actuellement entrain de travailler sur un projet e-commerce de grande envergure pour le compte d'un grossiste.",
   },
   {
-    img: "/css3.png",
-    alt: "CSS logo",
-    width: 81,
-    height: 81,
-    classNameImg: "w-12 xl:w-15",
-    bgLight: "bg-[#1E37B7]"
+    title: "Comment resolvez-vous les bugs ?",
+    description:
+      "En décomposant le code et en faisant des tests. En général cela se fait trés rapidement ayant une intuition assez forte pour cette tâche. Pourquoi ? Car mon code est assez bien organisé et lisible cela m'aide beaucoup à débuguer.",
   },
   {
-    img: "/js.png",
-    alt: "Javascript logo",
-    width: 50,
-    height: 50,
-    classNameImg: "rounded w-9 xl:w-11",
-    bgLight: "bg-[#CEAA18]"
+    title: "Comment faites-vous votre veille technique ?",
+    description:
+      "J'observe les tendances technologiques sur le web, les réseaux sociaux, les plus grands développeurs au monde. Je n'hésite pas à plonger dans les documentations en allant jusqu'à ses ramifications tout en effectuant des tests.",
   },
 ];

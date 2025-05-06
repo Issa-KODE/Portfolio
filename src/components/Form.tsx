@@ -41,7 +41,7 @@ export default function Form() {
   };
 
   useEffect(() => {
-    if(sendEmail) {
+    if (sendEmail) {
       setTimeout(() => {
         setSendEmail(false);
       }, 1500);
@@ -51,7 +51,7 @@ export default function Form() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="relative mt-7 w-full space-y-4 rounded-lg border border-gray-300 bg-white/95 p-6 shadow overflow-hidden"
+      className="relative mt-7 w-full space-y-4 overflow-hidden rounded-lg border border-gray-300 p-6"
     >
       <h2 className="text-center text-xl font-bold xl:text-2xl xl:font-semibold">
         Envoyez un e-mail
@@ -71,7 +71,7 @@ export default function Form() {
           id="name"
           name="name"
           required
-          className="mt-2 block w-full rounded border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"
+          className="mt-2 block w-full rounded border-gray-300 bg-white shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"
         />
       </div>
 
@@ -89,7 +89,7 @@ export default function Form() {
           id="email"
           name="email"
           required
-          className="mt-2 block w-full rounded border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"
+          className="mt-2 block w-full rounded border-gray-300 bg-white shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"
         />
       </div>
 
@@ -107,7 +107,7 @@ export default function Form() {
           name="message"
           rows={5}
           required
-          className="mt-2 block min-h-[100px] w-full rounded border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"
+          className="mt-2 block min-h-[100px] w-full rounded border-gray-300 bg-white shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"
         />
       </div>
 
@@ -127,7 +127,7 @@ export default function Form() {
       </Button>
 
       {sendEmail && (
-        <div className="absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-slate-200/70 px-4 py-2 text-center text-green-500 msg-form">
+        <div className="msg-form absolute top-1/2 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-slate-200/70 px-4 py-2 text-center text-green-500">
           Votre message a bien été envoyé
         </div>
       )}
