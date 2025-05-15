@@ -43,8 +43,8 @@ export default function Projects() {
         ref={targetRef}
         className={`mt-10 mb-15 grid grid-cols-1 gap-y-15 transition-all duration-1000 sm:mt-18 sm:mb-30 md:grid-cols-2 md:gap-x-5 xl:grid-cols-3 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-[10%] opacity-0"}`}
       >
-        {PROJECTS.slice(1, 4).map((project, index) => (
-          <Link href="/" key={index}>
+        {PROJECTS.map((project, index) => (
+          <Link href={project.href} key={index}>
             <li className="relative w-full rounded-[15px] border border-[#275DC2]/40 px-3 pt-[24px] pb-[30px] hover:bg-slate-50 sm:px-6 xl:h-[300px]">
               <h3 className="text-lg font-semibold md:text-[15px] lg:text-lg 2xl:text-xl">
                 {project.title}
@@ -107,7 +107,7 @@ export default function Projects() {
             asChild
             className="mt-auto hidden w-full border border-blue-400/30 p-6 hover:text-blue-300 lg:inline-flex"
           >
-            <Link href="">Visiter le site</Link>
+            <Link href="https://robotics-ruddy.vercel.app/" target="_blank">Visiter le site</Link>
           </Button>
         </div>
 
@@ -140,7 +140,7 @@ export default function Projects() {
             asChild
             className="mt-auto hidden w-full border border-orange-400/30 p-6 hover:text-orange-500 lg:inline-flex"
           >
-            <Link href="/">En savoir plus</Link>
+            <Link href="#contact">Cela m&apos;intéresse !</Link>
           </Button>
         </div>
 
@@ -161,9 +161,7 @@ export default function Projects() {
             Application Web
           </h4>
           <p className="text-[#aaa] lg:mb-10 lg:text-lg xl:mt-5">
-            A web application is application software that is created with web
-            technologies and runs via a web browser. Web applications emerged
-            during the late 1990s.
+            Nous concevons des sites sur mesure pour entrepreneurs, indépendants et petites entreprises. Notre objectif : vous aider à gagner en visibilité et à valoriser votre activité en ligne avec un site professionnel, rapide et responsive.
           </p>
 
           <Button

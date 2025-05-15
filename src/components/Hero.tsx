@@ -84,9 +84,7 @@ export default function Hero() {
           <p
             className={`mt-3 mb-10 text-sm text-[#A1A1A1] opacity-0 transition-opacity duration-1000 sm:mt-5 sm:mb-15 lg:mt-4 lg:mb-11 xl:text-lg ${isVisible && "opacity-100"}`}
           >
-            We believe technology is the answer to the world’s greatest
-            challenges. It’s also the cause, so we find ourselves in bit of a
-            catch 22 situation.
+           Nous pensons que la technologie est la réponse aux plus grands défis du monde.
           </p>
         </div>
 

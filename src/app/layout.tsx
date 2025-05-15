@@ -17,7 +17,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Porfolio Issa Petit",
-  description: "Portfolio d'Issa Petit, développeur frontend et backend depuis 4 ans.",
+  description: "Portfolio d'Issa Petit, développeur front-end et back-end depuis 4 ans.",
 };
 
 export default function RootLayout({

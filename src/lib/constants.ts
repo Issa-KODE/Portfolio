@@ -1,40 +1,25 @@
 export const PROJECTS = [
   {
     name: "project",
-    title: "App E-commerce",
+    title: "Robotics",
     description:
-      "A robust platform designed to enhance online shopping experiences with seamless  navigation and secure payment gateways.",
+      "Petit site vitrine sur le thème des robots.",
+    href: "https://robotics-ruddy.vercel.app/",
+  },
+  {
+    name: "project",
+    title: "Sharpify",
+    description:
+      "Petit logiciel pour améliorer la qualité d'image.",
+    href: "https://sharpify-mocha.vercel.app/",
+  },
+  {
+    name: "project",
+    title: "App Todo list",
+    description:
+      "Application de todo list pour organiser ses tâches.",
     href: "google.com",
-    img: "/app-commerce.jpeg",
-    alt: "App de e-commerce",
-  },
-  {
-    name: "project",
-    title: "Productivity App",
-    description:
-      "A mobile application that helps users stay organized and productive with task tracking and reminders.",
-    href: "youtube.com",
-    img: "/app-organized.jpeg",
-    alt: "App pour organiser son travail",
-  },
-  {
-    name: "project",
-    title: "E-commerce Platform",
-    description:
-      "A robust platform designed to enhance online shopping experiences with seamless  navigation and secure payment gateways.",
-    href: "google.com",
-    img: "/app-commerce.jpeg",
-    alt: "App de e-commerce",
-  },
-  {
-    name: "project",
-    title: "Productivity App",
-    description:
-      "A mobile application that helps users stay organized and productive with task tracking and reminders.",
-    href: "youtube.com",
-    img: "/app-organized.jpeg",
-    alt: "App pour organiser son travail",
-  },
+  }
 ];
 
 export const SKILLS = [

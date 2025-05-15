@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Form from "./Form";
+import Link from "next/link";
 export default function Contact() {
   return (
-    <section className="pt-50">
+    <section className="pt-50" id="contact">
         <h3 className="font-bold text-2xl lg:text-3xl xl:text-4xl">
           Besoin d&apos;un projet ?
         </h3>
@@ -24,37 +25,37 @@ export default function Contact() {
                 <h5 className="text-sm sm:text-[16px] text-center">GitHub</h5>
 
                 <div className="mt-2 flex aspect-square cursor-pointer items-center justify-center rounded-xl border border-gray-900/30 hover:bg-gray-900/5 sm:w-20">
-                  <div>
+                  <Link href="https://github.com/Issa-KODE" target="_blank">
                     <Image src={"/github.webp"} alt="" width={80} height={80} />
-                  </div>
+                  </Link>
                 </div>
               </li>
               <li className="w-20">
                 <h5 className="text-sm sm:text-[16px] text-center">LinkedIn</h5>
 
                 <div className="mt-2 flex aspect-square cursor-pointer items-center justify-center rounded-xl border border-gray-900/30 hover:bg-gray-900/5 sm:w-20">
-                  <div>
+                  <Link href="https://www.linkedin.com/in/issa-petit-9b088815b/" target="_blank">
                     <Image
                       src={"/linkedIn.webp"}
                       alt=""
                       width={55}
                       height={55}
                     />
-                  </div>
+                  </Link>
                 </div>
               </li>
               <li className="w-20">
                 <h5 className="text-sm sm:text-[16px] text-center">X</h5>
 
                 <div className="mt-2 flex aspect-square cursor-pointer items-center justify-center rounded-xl border border-gray-900/30 hover:bg-gray-900/5 sm:w-20">
-                  <div>
+                  <Link href="https://x.com" target="_blank">
                     <Image
                       src={"/twitter-X.png"}
                       alt=""
                       width={60}
                       height={60}
                     />
-                  </div>
+                  </Link>
                 </div>
               </li>
             </ul>
