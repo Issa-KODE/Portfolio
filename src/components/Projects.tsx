@@ -44,47 +44,30 @@ export default function Projects() {
         className={`mt-10 mb-15 grid grid-cols-1 gap-y-15 transition-all duration-1000 sm:mt-18 sm:mb-30 md:grid-cols-2 md:gap-x-5 xl:grid-cols-3 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-[10%] opacity-0"}`}
       >
         {PROJECTS.map((project, index) => (
-          <Link href={project.href} key={index}>
-            <li className="relative w-full rounded-[15px] border border-[#275DC2]/40 px-3 pt-[24px] pb-[30px] hover:bg-slate-50 sm:px-6 xl:h-[300px]">
-              <h3 className="text-lg font-semibold md:text-[15px] lg:text-lg 2xl:text-xl">
-                {project.title}
-              </h3>
+          <div key={index} className="overflow-hidden">
+            <Link href={project.href} target="_blank">
+              <li
+                className={`relative flex h-[250px] w-full items-center justify-center rounded-[15px] border border-[#275DC2]/40 hover:bg-slate-50`}
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={600}
+                  height={600}
+                  className={`w-[90%] h-full rounded-[15px] object-contain ${project.title === "App Todo list" && "object-contain"}`}
+                />
+              </li>
+            </Link>
+            <div className={`mt-7 rounded-xl border border-gray-300 px-4 py-5`}>
+              <h1 className="text-xl font-bold">{project.title}</h1>
+              <p className="mt-1 mb-2">{project.description}</p>
+              <p>{project.techs}</p>
 
-              <Image
-                className="absolute top-4 right-4 h-6 w-6"
-                src={"/arrow-block.svg"}
-                alt=""
-                width={17}
-                height={17}
-              />
-
-              <p className="mt-[16px] mb-[28px] text-sm md:text-[13px] lg:text-sm xl:text-[15px]">
-                {project.description}
-              </p>
-
-              <div className="rounded-md bg-gradient-to-b from-[#222] to-[#363636] px-4 pt-5 pb-4 sm:pb-8">
-                <div className="flex justify-between">
-                  <div className="space-y-3">
-                    <div className="h-[8px] w-[110px] rounded-full bg-white" />
-                    <div className="h-[8px] w-[80px] rounded-full bg-white" />
-                    <div className="h-[8px] w-[60px] rounded-full bg-white" />
-                  </div>
-
-                  <div>
-                    <div className="mb-3 flex items-center">
-                      <div className="hidden h-5 w-5 rounded bg-white sm:block" />
-                      <div className="ml-4 h-5 w-30 rounded bg-white" />
-                    </div>
-
-                    <div className="flex items-center">
-                      <div className="hidden h-5 w-5 rounded bg-white sm:block" />
-                      <div className="ml-4 h-5 w-30 rounded bg-white" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </Link>
+              {project.href !== "" && (
+                <Link href={project.href} target="_blank" className="text-blue-500 mt-3 block">Visiter le site</Link>
+              )}
+            </div>
+          </div>
         ))}
       </ul>
 
@@ -107,7 +90,9 @@ export default function Projects() {
             asChild
             className="mt-auto hidden w-full border border-blue-400/30 p-6 hover:text-blue-300 lg:inline-flex"
           >
-            <Link href="https://robotics-ruddy.vercel.app/" target="_blank">Visiter le site</Link>
+            <Link href="https://robotics-ruddy.vercel.app/" target="_blank">
+              Visiter le site
+            </Link>
           </Button>
         </div>
 
@@ -161,7 +146,10 @@ export default function Projects() {
             Application Web
           </h4>
           <p className="text-[#aaa] lg:mb-10 lg:text-lg xl:mt-5">
-            Nous concevons des sites sur mesure pour entrepreneurs, indépendants et petites entreprises. Notre objectif : vous aider à gagner en visibilité et à valoriser votre activité en ligne avec un site professionnel, rapide et responsive.
+            Nous concevons des sites sur mesure pour entrepreneurs, indépendants
+            et petites entreprises. Notre objectif : vous aider à gagner en
+            visibilité et à valoriser votre activité en ligne avec un site
+            professionnel, rapide et responsive.
           </p>
 
           <Button

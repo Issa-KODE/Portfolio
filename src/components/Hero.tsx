@@ -38,7 +38,7 @@ export default function Hero() {
         <div className="lg:w-1/2">
           <h2 className="bg-gradient-to-b from-gray-900 to-gray-600 bg-clip-text text-2xl text-transparent sm:text-4xl md:text-5xl xl:text-6xl">
             Hello, <span className="text-blue-400">Issa Petit</span> Développeur
-            web à votre service.
+            web.
           </h2>
 
           <Button

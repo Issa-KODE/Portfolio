@@ -1,24 +1,27 @@
 export const PROJECTS = [
   {
-    name: "project",
     title: "Robotics",
     description:
-      "Petit site vitrine sur le thème des robots.",
+      "Site vitrine sur le thème des robots.",
     href: "https://robotics-ruddy.vercel.app/",
+    image: "/robotics.png",
+    techs: "React, Next.js, Typescript, TailwindCSS"
   },
   {
-    name: "project",
     title: "Sharpify",
     description:
       "Petit logiciel pour améliorer la qualité d'image.",
     href: "https://sharpify-mocha.vercel.app/",
+    image: "/sharpify.png",
+    techs: "Node.js, React, Next.js, Typescript, TailwindCSS"
   },
   {
-    name: "project",
-    title: "App Todo list",
+    title: "Remember",
     description:
       "Application de todo list pour organiser ses tâches.",
-    href: "google.com",
+    href: "https://expo.dev/accounts/issa_kod/projects/remember-2/builds/e979c9d5-7f01-4cf6-801f-e6c18b60af71",
+    image: "/remember.png",
+    techs: "React Native (Expo), NailwindCSS"
   }
 ];
 
